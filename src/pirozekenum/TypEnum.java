@@ -6,6 +6,8 @@ package pirozekenum;
 
 import pirozekenum.Message.AbstractMessage;
 import pirozekenum.Message.Message1;
+import pirozekenum.Message.Message2;
+import pirozekenum.Message.Message3;
 
 /**
  *
@@ -13,7 +15,9 @@ import pirozekenum.Message.Message1;
  */
 public enum TypEnum {
 
-    ZPRAVA_1("zprava1", Message1.class);
+    ZPRAVA_1("zprava1", Message1.class),
+    ZPRAVA_2("zprava2", Message2.class),
+    ZPRAVA_3("zprava3", Message3.class);
     private String code;
     private Class<? extends AbstractMessage> cls;
 
